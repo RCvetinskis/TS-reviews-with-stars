@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+body{
+    font-family: monospace;
+    background-color: #fffffc;
+    color: #aaa;
+
+}
+
+nav{
+    text-align: center;
+    margin: 10px;
+}
+
+#myBtn{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    border: 1px solid white;
+    color: #fffffc;
+    background-color: #9bf6ff;
+    transition:   0.3s;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+}
+
+
+#myBtn:hover{
+    cursor: pointer;
+    background-color: #fffffc;
+    color: #9bf6ff; 
+    border: 3px solid #9bf6ff;
+}
+
+.modal {
+     display: none;
+    position: fixed; /* Stay in place */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+
+.modal-content{
+    display: flex;
+    gap: 30px;
+    background-color: #9bf6ff;
+    align-items: center;
+    justify-content: space-between;
+    color: #fffffc;
+     margin: 15% auto; /* 15% from the top and centered */
+     padding: 20px;
+    border-radius: 10px;
+    max-width: 80%; /* Could be more or less, depending on screen size */
+    padding: 30px;
+    position: absolute;
+    height: 250px;
+   
+}
+
+
+
+.checked{
+    color: orange;
+} 
+
+
+.rating-number{
+    box-shadow: 0 0 3px 3px #9bf6ff;
+    height: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fffffc;
+    color: #aaa;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+label{
+    font-size: 1.1em;
+    
+}
+
+textarea{
+    outline: none;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #fffffc;
+    color: #aaa;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    overflow: scroll;
+    width: 300px;
+    
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+#addCommenct{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    box-shadow: 0 0 3px 3px #fffffc;
+    color: #fffffc;
+    background-color: #9bf6ff;
+    transition: border, background 0.3s;
+}
+
+#addCommenct:hover{
+    cursor: pointer;
+    background-color: #fffffc;
+    color: #ffc6ff; 
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    top: -50%;
+    right: -1.5%;
+   
+
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .delete-comment{
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    left: 100%;
+
+  }
+
+  .delete-comment:hover,
+  .delete-comment:focus {
+    color: #9bf6ff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* added comments */
+
+
+  .ratings{
+    box-shadow: 0 0 3px 3px #9bf6ff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+}
+
+
+
+.comments-container{
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px 3px #9bf6ff;
+    border-radius: 8px;
+ 
+   
+}
+.comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+   border-bottom: 1px inset #9bf6ff;
+  
+}
+.comment:last-child{
+    border-bottom: none;
+}
+.comment-value{
+    padding: 30px;
+    font-weight: 300;
+    font-size: 1.1em;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+   
+   
+}
+
+.title-sort-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sort{
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    width: 130px;
+    border: 1px solid white;
+    color: #fffffc;
+    background-color: #9bf6ff;
+    transition:   0.3s;
+    margin-top: 10px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+
+  @media(max-width:900px){
+    .modal-content{
+        flex-direction: column;
+    }
+    .close{
+        top: -160%;
+        font-size: 7em;
+    }
+    
+  }
+

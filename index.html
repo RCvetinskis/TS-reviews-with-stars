@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1 uzduotis chat</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>1 uzduotis chat</h1>
+      <button id="myBtn">Write commenct</button>
+    </nav>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <input
+          type="text"
+          id="username"
+          class="username"
+          placeholder="Username"
+        />
+
+        <div class="rating-container">
+          <label for="rating">Rate from 1-5:</label>
+          <input
+            type="number"
+            class="rating-number"
+            min="1"
+            max="5"
+            name="rating"
+          />
+        </div>
+        <textarea
+          class="commenct"
+          id="commenct"
+          placeholder="Your comment"
+        ></textarea>
+        <div class="button-container">
+          <button id="addCommenct">Add</button>
+        </div>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <main>
+      <div class="title-sort-container">
+        <h1 class="title">All Reviews:</h1>
+        <button class="sort">sort by high reviews</button>
+      </div>
+      <div class="comments-container">
+        <!-- <div class="comment" id="comment">
+          <h3>Username</h3>
+          <div class="ratings">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="comment-value">
+          </div> -->
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
